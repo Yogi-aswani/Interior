@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    width: 100%;
+}
+.aside{
+    width: 25%;
+    background-color: #f44336;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+.main{
+    width: 75%;
+    position: absolute;
+    right: 0px;
+}
+.list{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:    center;
+    align-items: start;
+    margin: 15px;
+    
+}
+.list li{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-transform: capitalize;
+   
+    font-family: monospace;
+    width: 100%;
+    padding: 10px;
+}
+.list  :hover{
+    color: #000 !important;
+    background-color: #fff !important;
+
+}
+.content{
+    width: 90%;
+   
+    height: 100%;
+    margin: auto;
+}
+.design{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+.design h1{
+    font-size: 46px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.border{
+    border-bottom: 10px solid red;
+    width: 80px;
+    border-radius: 10px;
+    margin-top: 20px;   
+}
+.image{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 33px;
+}
+.imgs{
+    width: 48%;
+
+}
+.imgs  img:hover{
+    opacity: 1;
+    background-color: red;
+}
+.image img {
+    width: 100%;
+    opacity: 0.4;
+    
+}
+.system{
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+}
+.system h1{
+    font-size: 46px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.system p{
+    font-size: 20px;
+}
+.card-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.card-content .card{
+    width: 33%;
+    height: 400px;
+    background-color: #f1f1f1;
+}
+
+.card .card-image{
+    width: 100%;
+    opacity: 0.6;
+}
+.card .card-text{
+    padding: 15px;
+}
+.boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;   
+}
+.boxes .box{
+    width: 49%;
+    height: 552px;
+}
+.basic{
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.basic p{
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+.pro{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro p{
+    color: white;
+    font-size: 32px;
+    font-weight: 600; 
+}
+.box-list{
+    background-color: #f1f1f1;
+}
+.box-list .listss{
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    font-family: system-ui;
+    border-bottom: 1px solid #808080a8;
+
+}
+.room{
+    height: 100px !important;
+    line-height: 41px;
+}
+.dolor{
+    font-size: 39px;
+    font-family: system-ui;
+}
+.sign{
+    background: white;
+    color: black;
+    text-decoration: none;
+    font-family: system-ui;
+    height: 46px;
+    width: 89px;
+    text-align: center;
+}
+.shover :hover{
+    background-color: black;
+    color: white;
+}
+.rsign{
+    background: red;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui;
+    height: 46px;
+    width: 89px;
+    text-align: center;
+}
+.redsign :hover{
+    background-color: black;
+    color: white;
+}
+.form{
+    margin-top: 5px;
+}
+.form input{
+    width: 100%;
+    padding: 8px;
+}
+.form label{
+    text-transform: capitalize;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #f44336;
+}
+.button a{
+      padding: 10px;
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      width: 100%;
+    text-align: center;
+}
+.footer{
+    width: 100%;
+    height: 120px;
+    background-color: #f1f1f1;
+    margin-top: 25px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.footer p{
+    margin-right: 70px;
+    font-size: 18px;
+    font-family: system-ui;
+}
+.message :hover{
+   background-color: gray;
+   color: black;
+}
+.opac:hover{
+    opacity: 0.;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="aside">
+            <div class="list">                
+                <li>home</li>
+                <li>showcase</li>
+                <li>services</li>
+                <li>desgners</li>
+                <li>packages</li>
+                <li>contact</li>
+            </div>
+        </div>
+        <div class="main">
+            <div class="content">
+                <div class="design">
+                    <h1>Interior Design</h1>
+                    <h1><span style="color: #f44336;;">Showcase.</span></h1>
+                    <span class="border"></span>
+                </div>
+                <div class="image">
+                    <div class="imgs">
+                        <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="">
+                    </div>
+                    <div class="imgs">
+                          <img src="https://www.w3schools.com/w3images/atrium.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="imgs">
+                        <img src="https://www.w3schools.com/w3images/livingroom.jpg" alt="" >
+                    </div>
+                    <div class="imgs">
+                          <img src="https://www.w3schools.com/w3images/bedroom.jpg" alt="">
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="imgs">
+                        <img src="https://www.w3schools.com/w3images/diningroom.jpg" alt="">
+                    </div>
+                    <div class="imgs">
+                          <img src="https://www.w3schools.com/w3images/livingroom2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="system">
+                    <h1><span style="color: #f44336;;">Syatem.</span></h1>
+                    <span class="border"></span>
+                    <p style="line-height: 90px;">We are a interior design service that focus on what's best for your home and what's best for you!
+                    </p>
+                    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="system">
+                    <h1><span style="color: #f44336;;">Designers.</span></h1>
+                    <span class="border"></span>
+                    <p style="line-height: 90px;">We are a interior design service that focus on what's best for your home and what's best for you!
+                    </p>
+                    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <p style="line-height: 90px; font-size: 20px; font-weight: 600;">Our designers are thoughtfully 
+                chosen:</p>
+                <div class="card-content">
+                     <div class="card">
+                        <div class="card-image">
+                            <img src="https://www.w3schools.com/w3images/team2.jpg" alt="" width="100%">
+                        </div>
+                        <div class="card-text">
+                            <h1 style="line-height: 50px;">John Doe</h1>
+                            <p style="line-height: 50px; color: #757575;">CEO & Founder</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+
+                            </p>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                            <img src="https://www.w3schools.com/w3images/team1.jpg" alt="" width="100%">
+                        </div>
+                        <div class="card-text">
+                            <h1 style="line-height: 50px;">Jane Doe</h1>
+                            <p style="line-height: 50px; color: #757575;">Designer</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+
+                            </p>
+                        </div>
+                     </div>
+                     <div class="card">
+                        <div class="card-image">
+                            <img src="https://www.w3schools.com/w3images/team3.jpg" alt="" width="100%">
+                        </div>
+                        <div class="card-text">
+                            <h1 style="line-height: 50px;">Mike Ross</h1>
+                            <p style="line-height: 50px; color: #757575;">Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+
+                            </p>
+                        </div>
+                     </div>
+                </div>
+                <div class="system">
+                    <h1><span style="color: #f44336;;">Packages.</span></h1>
+                    <span class="border"></span>
+                    <p style="margin-top: 40px;">Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                    </p>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="basic">
+                            <p>Basic</p>
+                        </div>
+                        <div class="box-list">
+                            <div class="listss">
+                                <li>Floorplaining</li>
+                            </div>
+                            <div class="listss">
+                                <li>10 hours support</li>
+                            </div>
+                            <div class="listss">
+                                <li>Photography</li>
+                            </div>
+                            <div class="listss">
+                                <li>20% furniture discount</li>
+                            </div>
+                            <div class="listss">
+                                <li>Good deals</li>
+                            </div> 
+                            <div class="listss room">
+                                <li><p class="dolor">$ 199</p><p style="text-align: center;">per room</p></li>
+                            </div>  
+                            <div class="listss room shover">
+                                    <a href="#" class="sign" style="font-weight: 600;">Sign Up</a>
+                            </div>   
+                        </div>
+
+                    </div>
+                    <div class="box">
+                          <div class="pro">
+                            <p>Pro</p>
+                          </div>
+                          <div class="box-list">
+                            <div class="listss">
+                                <li>Floorplaining</li>
+                            </div>
+                            <div class="listss">
+                                <li>50 hours support</li>
+                            </div>
+                            <div class="listss">
+                                <li>Photography</li>
+                            </div>
+                            <div class="listss">
+                                <li>50% furniture discount</li>
+                            </div>
+                            <div class="listss">
+                                <li>GREAT deals</li>
+                            </div> 
+                            <div class="listss room">
+                                <li><p class="dolor">$ 249</p><p style="text-align: center;">per room</p></li>
+                            </div>  
+                            <div class="listss room redsign">
+                                    <a href="#" class="rsign"style="font-weight: 600;">Sign Up</a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+                <div class="system">
+                    <h1><span style="color: #f44336;;">Contact.</span></h1>
+                    <span class="border"></span>
+                    <p style="margin-top: 40px;">Do you want us to style your home? Fill out the form and fill me in with the details : We love meeting new people!
+
+                    </p>
+                </div>
+                <div class="form">
+                    <form action="" style="margin-top: 25px;line-height: 24px;">
+                    <label for="">name</label><br>
+                    <input type="text"><br><br>
+                    <label for="">email</label><br>
+                    <input type="text"><br><br>
+                    <label for="">messages</label><br>
+                    <input type="text">
+                    <div class="button message">
+                        <a href="">Send Message</a>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+             <p>Powered by w3.css</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
